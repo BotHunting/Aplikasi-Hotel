@@ -1,0 +1,14 @@
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\bin\Debug\aplikasi_hotel.exe.config
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.csprojResolveAssemblyReference.cache
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form1.resources
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form2.resources
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form3.resources
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Properties.Resources.resources
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.csproj.GenerateResource.Cache
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\bin\Debug\aplikasi_hotel.exe
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\bin\Debug\aplikasi_hotel.pdb
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.exe
+c:\users\achmad faris zubaidi\documents\visual studio 2015\Projects\aplikasi_hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.pdb
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\bin\Debug\aplikasi_hotel.exe.config
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.exe
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.pdb
