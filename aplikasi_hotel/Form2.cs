@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Drawing.Printing;
+
 
 namespace aplikasi_hotel
 {
@@ -115,7 +117,7 @@ namespace aplikasi_hotel
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string namaFile = textBox1.Text + ".txt";
+            string namaFile = label15.Text + ".txt";
             using (StreamWriter file = new StreamWriter(namaFile, true))
             {
                 file.WriteLine("Nama: " + label15.Text);
@@ -124,9 +126,9 @@ namespace aplikasi_hotel
                 file.WriteLine("Tanggal: " + label18.Text);
                 file.WriteLine("Kelas: " + comboBox1.Text);
                 file.WriteLine("Lama Menginap: " + comboBox2.Text + " Hari");
-                file.WriteLine("Harga Kamar: " + textBox5.Text);
-                file.WriteLine("PPN 10% : " + textBox6.Text);
-                file.WriteLine("Total Harga: " + textBox7.Text);
+                file.WriteLine("Harga Kamar: Rp. " + textBox5.Text);
+                file.WriteLine("PPN 10%: Rp. " + textBox6.Text);
+                file.WriteLine("Total Harga: Rp. " + textBox7.Text);
                 file.WriteLine("");
             }
             MessageBox.Show("Data berhasil disimpan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -202,7 +204,7 @@ namespace aplikasi_hotel
             PrintDialog printDialog = new PrintDialog();
             PrintDocument printDocument = new PrintDocument();
             printDialog.Document = printDocument;
-            printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
+            printDocument.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
 
             if (printDialog.ShowDialog() == DialogResult.OK)
             {
@@ -226,9 +228,15 @@ namespace aplikasi_hotel
             graphics.DrawString("Jenis Kamar: " + comboBox1.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 4);
             graphics.DrawString("Fasilitas: " + textBox4.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 5);
             graphics.DrawString("Lama Inap: " + comboBox2.Text + " Hari", font, new SolidBrush(Color.Black), startX, startY + offset * 6);
-            graphics.DrawString("Harga: " + textBox5.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 7);
-            graphics.DrawString("PPN: " + textBox6.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 8);
-            graphics.DrawString("Total Harga: " + textBox7.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 9);
+            graphics.DrawString("Harga: Rp. " + textBox5.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 7);
+            graphics.DrawString("PPN 10%: Rp. " + textBox6.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 8);
+            graphics.DrawString("Total Harga: Rp. " + textBox7.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 9);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 10);
+            graphics.DrawString("Resepsionis", font, new SolidBrush(Color.Black), startX, startY + offset * 11);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 12);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 13);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 14);
+            graphics.DrawString("..................", font, new SolidBrush(Color.Black), startX, startY + offset * 15);
         }
     }
 }
