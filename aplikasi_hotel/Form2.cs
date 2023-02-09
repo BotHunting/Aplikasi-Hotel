@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace aplikasi_hotel
@@ -24,8 +25,8 @@ namespace aplikasi_hotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string a, b, c, combo1, combo2;
-            int harga, total, lama;
+            string a, b, c, d, combo1, combo2;
+            int harga = 0, total, lama;
             double ppn;
             a = textBox1.Text;
             b = textBox2.Text;
@@ -33,48 +34,40 @@ namespace aplikasi_hotel
             combo1 = comboBox1.Text;
             combo2 = comboBox2.Text;
             lama = Convert.ToInt16(combo2);
+            d = dateTimePicker1.Text;
+
             if (combo1.Equals("VIP"))
             {
                 textBox4.Text = "Kamar Mewah, Tv dan WIFI";
                 harga = 300000;
-                total = (harga * lama);
-                ppn = total * 0.1;
-                total += (int)ppn;
-                label15.Text = a;
-                label16.Text = b;
-                label17.Text = c;
-                textBox5.Text = harga.ToString();
-                textBox6.Text = ppn.ToString();
-                textBox7.Text = total.ToString();
             }
             else if (combo1.Equals("STANDART"))
             {
                 textBox4.Text = "Kamar Mewah dan Tv";
                 harga = 150000;
-                total = (harga * lama);
-                ppn = total * 0.1;
-                total += (int)ppn;
-                label15.Text = a;
-                label16.Text = b;
-                label17.Text = c;
-                textBox5.Text = harga.ToString();
-                textBox6.Text = ppn.ToString();
-                textBox7.Text = total.ToString();
             }
             else if (combo1.Equals("HEMAT"))
             {
                 textBox4.Text = "Kamar Mewah";
                 harga = 100000;
-                total = (harga * lama);
-                ppn = total * 0.1;
-                total += (int)ppn;
-                label15.Text = a;
-                label16.Text = b;
-                label17.Text = c;
-                textBox5.Text = harga.ToString();
-                textBox6.Text = ppn.ToString();
-                textBox7.Text = total.ToString();
             }
+
+            if (harga == 0)
+            {
+                MessageBox.Show("Tipe kamar belum dipilih.");
+                return;
+            }
+
+            total = (harga * lama);
+            ppn = total * 0.1;
+            total += (int)ppn;
+            label15.Text = a;
+            label16.Text = b;
+            label17.Text = c;
+            label18.Text = d;
+            textBox5.Text = harga.ToString();
+            textBox6.Text = ppn.ToString();
+            textBox7.Text = total.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -89,6 +82,7 @@ namespace aplikasi_hotel
             label15.Text = "";
             label16.Text = "";
             label17.Text = "";
+            label18.Text = "";
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,6 +97,7 @@ namespace aplikasi_hotel
             label15.Text = "";
             label16.Text = "";
             label17.Text = "";
+            label18.Text = "";
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,6 +111,124 @@ namespace aplikasi_hotel
         {
             Form3 tolong = new Form3();
             tolong.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string namaFile = textBox1.Text + ".txt";
+            using (StreamWriter file = new StreamWriter(namaFile, true))
+            {
+                file.WriteLine("Nama: " + label15.Text);
+                file.WriteLine("Alamat: " + label16.Text);
+                file.WriteLine("No. Telepon: " + label17.Text);
+                file.WriteLine("Tanggal: " + label18.Text);
+                file.WriteLine("Kelas: " + comboBox1.Text);
+                file.WriteLine("Lama Menginap: " + comboBox2.Text + " Hari");
+                file.WriteLine("Harga Kamar: " + textBox5.Text);
+                file.WriteLine("PPN 10% : " + textBox6.Text);
+                file.WriteLine("Total Harga: " + textBox7.Text);
+                file.WriteLine("");
+            }
+            MessageBox.Show("Data berhasil disimpan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+            PrintDocument printDocument = new PrintDocument();
+            printDialog.Document = printDocument;
+            printDocument.PrintPage += new PrintPageEventHandler(printDocument_PrintPage);
+
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                printDocument.Print();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+            Font font = new Font("Courier New", 12);
+            float fontHeight = font.GetHeight();
+            int startX = 10;
+            int startY = 10;
+            int offset = 40;
+
+            graphics.DrawString("Nama: " + label15.Text, font, new SolidBrush(Color.Black), startX, startY);
+            graphics.DrawString("Alamat: " + label16.Text, font, new SolidBrush(Color.Black), startX, startY + offset);
+            graphics.DrawString("No. Telepon: " + label17.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 2);
+            graphics.DrawString("Check In: " + label18.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 3);
+            graphics.DrawString("Jenis Kamar: " + comboBox1.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 4);
+            graphics.DrawString("Fasilitas: " + textBox4.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 5);
+            graphics.DrawString("Lama Inap: " + comboBox2.Text + " Hari", font, new SolidBrush(Color.Black), startX, startY + offset * 6);
+            graphics.DrawString("Harga: " + textBox5.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 7);
+            graphics.DrawString("PPN: " + textBox6.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 8);
+            graphics.DrawString("Total Harga: " + textBox7.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 9);
         }
     }
 }

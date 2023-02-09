@@ -1,0 +1,10 @@
+Nama: Zubed
+Alamat: papua
+Usia: 32
+Tanggal: Kamis, 09 Februari 2023
+Kelas: VIP
+Lama Menginap: 1
+Harga Kamar: 300000
+PPN: 30000
+Total Harga: 330000
+
