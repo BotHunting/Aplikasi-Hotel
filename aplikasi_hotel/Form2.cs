@@ -25,7 +25,8 @@ namespace aplikasi_hotel
         private void button1_Click(object sender, EventArgs e)
         {
             string a, b, c, combo1, combo2;
-            int harga, ppn, total, lama;
+            int harga, total, lama;
+            double ppn;
             a = textBox1.Text;
             b = textBox2.Text;
             c = textBox3.Text;
@@ -35,9 +36,10 @@ namespace aplikasi_hotel
             if (combo1.Equals("VIP"))
             {
                 textBox4.Text = "Kamar Mewah, Tv dan WIFI";
-                harga = 700000;
-                ppn = 20000;
-                total = (harga * lama) + ppn;
+                harga = 300000;
+                total = (harga * lama);
+                ppn = total * 0.1;
+                total += (int)ppn;
                 label15.Text = a;
                 label16.Text = b;
                 label17.Text = c;
@@ -48,9 +50,10 @@ namespace aplikasi_hotel
             else if (combo1.Equals("STANDART"))
             {
                 textBox4.Text = "Kamar Mewah dan Tv";
-                harga = 500000;
-                ppn = 20000;
-                total = (harga * lama) + ppn;
+                harga = 150000;
+                total = (harga * lama);
+                ppn = total * 0.1;
+                total += (int)ppn;
                 label15.Text = a;
                 label16.Text = b;
                 label17.Text = c;
@@ -61,9 +64,10 @@ namespace aplikasi_hotel
             else if (combo1.Equals("HEMAT"))
             {
                 textBox4.Text = "Kamar Mewah";
-                harga = 300000;
-                ppn = 20000;
-                total = (harga * lama) + ppn;
+                harga = 100000;
+                total = (harga * lama);
+                ppn = total * 0.1;
+                total += (int)ppn;
                 label15.Text = a;
                 label16.Text = b;
                 label17.Text = c;
