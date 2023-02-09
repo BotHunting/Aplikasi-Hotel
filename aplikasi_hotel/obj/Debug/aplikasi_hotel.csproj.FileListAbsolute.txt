@@ -20,3 +20,4 @@ D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form2.re
 D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form3.resources
 D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Properties.Resources.resources
 D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.csproj.GenerateResource.Cache
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form4.resources

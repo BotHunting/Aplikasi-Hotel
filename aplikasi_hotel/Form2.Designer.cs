@@ -279,9 +279,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(72, 399);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 13);
+            this.label13.Size = new System.Drawing.Size(52, 13);
             this.label13.TabIndex = 20;
-            this.label13.Text = "PPN";
+            this.label13.Text = "PPN 10%";
             // 
             // label14
             // 
@@ -336,15 +336,15 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Logout";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem

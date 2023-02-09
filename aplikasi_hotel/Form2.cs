@@ -107,9 +107,9 @@ namespace aplikasi_hotel
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Close();/*untuk mengklos form1*/
-            this.Close();/*untuk mengklos form hotelcs*/
+            Form1 f1 = new Form1();
+            f1.Show();/*untuk membuka form1*/
+            this.Close();/*untuk mengklos form2*/
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
