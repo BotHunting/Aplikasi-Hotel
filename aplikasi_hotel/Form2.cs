@@ -41,17 +41,17 @@ namespace aplikasi_hotel
             if (combo1.Equals("VIP"))
             {
                 textBox4.Text = "Kamar Mewah, Tv dan WIFI";
-                harga = 300000;
+                harga = 150000;
             }
             else if (combo1.Equals("STANDART"))
             {
                 textBox4.Text = "Kamar Mewah dan Tv";
-                harga = 150000;
+                harga = 120000;
             }
             else if (combo1.Equals("HEMAT"))
             {
                 textBox4.Text = "Kamar Mewah";
-                harga = 100000;
+                harga = 75000;
             }
 
             if (harga == 0)

@@ -1,0 +1,10 @@
+Nama: Zubed
+Alamat: Papua Barat
+No. Telepon: 08123456789
+Tanggal: Kamis, 09 Februari 2023
+Kelas: VIP
+Lama Menginap: 1 Hari
+Harga Kamar: Rp. 150000
+PPN 10%: Rp. 15000
+Total Harga: Rp. 165000
+
