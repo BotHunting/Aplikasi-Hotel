@@ -21,3 +21,7 @@ D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form3.re
 D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Properties.Resources.resources
 D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.csproj.GenerateResource.Cache
 D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.Form4.resources
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\bin\Debug\aplikasi_hotel.exe.manifest
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\bin\Debug\aplikasi_hotel.application
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.exe.manifest
+D:\Proyek\Github\Aplikasi-Hotel\aplikasi_hotel\obj\Debug\aplikasi_hotel.application
