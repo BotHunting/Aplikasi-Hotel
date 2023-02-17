@@ -15,9 +15,12 @@ namespace aplikasi_hotel
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string username;
+
+        public Form2(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -236,7 +239,7 @@ namespace aplikasi_hotel
             graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 12);
             graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 13);
             graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 14);
-            graphics.DrawString("..................", font, new SolidBrush(Color.Black), startX, startY + offset * 15);
+            graphics.DrawString(username, font, new SolidBrush(Color.Black), startX, startY + offset * 15);
         }
     }
 }

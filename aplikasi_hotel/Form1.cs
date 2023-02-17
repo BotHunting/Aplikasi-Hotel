@@ -36,7 +36,7 @@ namespace aplikasi_hotel
                     if (username == userData[0] && password == userData[1])
                     {
                         MessageBox.Show("Login Sukses");
-                        Form2 h = new Form2(); /*instantiasi hotel atau mendefinisikan sebuah kelas baru*/
+                        Form2 h = new Form2(username); /*instantiasi hotel atau mendefinisikan sebuah kelas baru*/
                         h.Show(); /*perintah untuk menampilkan hotel.cs*/
                         this.Hide(); // untuk menyembunyikan form1
                         return;
