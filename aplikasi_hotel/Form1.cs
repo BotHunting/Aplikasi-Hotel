@@ -57,5 +57,11 @@ namespace aplikasi_hotel
             form4.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string path = "OYO Bulat.png"; // ganti nama_file_gambar.jpg dengan nama file gambar yang ingin ditampilkan
+            pictureBox1.Image = Image.FromFile(path);
+        }
     }
 }

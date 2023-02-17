@@ -224,22 +224,30 @@ namespace aplikasi_hotel
             int startY = 10;
             int offset = 40;
 
-            graphics.DrawString("Nama: " + label15.Text, font, new SolidBrush(Color.Black), startX, startY);
-            graphics.DrawString("Alamat: " + label16.Text, font, new SolidBrush(Color.Black), startX, startY + offset);
-            graphics.DrawString("No. Telepon: " + label17.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 2);
-            graphics.DrawString("Check In: " + label18.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 3);
-            graphics.DrawString("Jenis Kamar: " + comboBox1.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 4);
-            graphics.DrawString("Fasilitas: " + textBox4.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 5);
-            graphics.DrawString("Lama Inap: " + comboBox2.Text + " Hari", font, new SolidBrush(Color.Black), startX, startY + offset * 6);
-            graphics.DrawString("Harga: Rp. " + textBox5.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 7);
-            graphics.DrawString("PPN 10%: Rp. " + textBox6.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 8);
-            graphics.DrawString("Total Harga: Rp. " + textBox7.Text, font, new SolidBrush(Color.Black), startX, startY + offset * 9);
-            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 10);
-            graphics.DrawString("Resepsionis", font, new SolidBrush(Color.Black), startX, startY + offset * 11);
-            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 12);
-            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 13);
-            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + offset * 14);
-            graphics.DrawString(username, font, new SolidBrush(Color.Black), startX, startY + offset * 15);
+            // tambahkan gambar
+            Image image = Image.FromFile("OYO.png"); // ganti dengan nama file gambar yang ingin ditampilkan
+            int imageWidth = 350; // ukuran lebar gambar yang diinginkan
+            int imageHeight = 150; // ukuran tinggi gambar yang diinginkan
+            graphics.DrawImage(image, startX, startY, imageWidth, imageHeight);
+
+            // posisi cetak
+            graphics.DrawString("Nama: " + label15.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset);
+            graphics.DrawString("Alamat: " + label16.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 2);
+            graphics.DrawString("No. Telepon: " + label17.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 3);
+            graphics.DrawString("Check In: " + label18.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 4);
+            graphics.DrawString("Jenis Kamar: " + comboBox1.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 5);
+            graphics.DrawString("Fasilitas: " + textBox4.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 6);
+            graphics.DrawString("Lama Inap: " + comboBox2.Text + " Hari", font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 7);
+            graphics.DrawString("Harga: Rp. " + textBox5.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 8);
+            graphics.DrawString("PPN 10%: Rp. " + textBox6.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 9);
+            graphics.DrawString("Total Harga: Rp. " + textBox7.Text, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 10);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 11);
+            graphics.DrawString("Resepsionis", font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 12);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 13);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 14);
+            graphics.DrawString(" ", font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 15);
+            graphics.DrawString(username, font, new SolidBrush(Color.Black), startX, startY + imageHeight + offset * 16);
         }
+
     }
 }
