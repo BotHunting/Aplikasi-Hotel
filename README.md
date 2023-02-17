@@ -1,7 +1,7 @@
 
 <br/>
 <div align="center">
-<a href="https://imgbox.com/dfcoZahK" target="_blank"><img src="https://thumbs2.imgbox.com/df/f1/dfcoZahK_t.png" alt="image host"/></a>
+<a href="https://imgbox.com/dfcoZahK" target="_blank"><img src="https://thumbs2.imgbox.com/df/f1/dfcoZahK_t.png" alt="image host"alt="Logo" width="120" height="120"/></a>
   
   <h2 align="center">Aplikasi Hotel OYO</h3>
 
