@@ -1,0 +1,10 @@
+Nama: zubed
+Alamat: papua
+No. Telepon: 0123456
+Tanggal: Sabtu, 25 Februari 2023
+Kelas: HEMAT
+Lama Menginap: 4 Hari
+Harga Kamar: Rp. 75000
+PPN 10%: Rp. 30000
+Total Harga: Rp. 330000
+
