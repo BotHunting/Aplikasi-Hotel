@@ -27,12 +27,12 @@ Aplikasi Recepcionis via Login
 ---------------------------------------
 ## Form Pengisian
 
-<a href="https://imgbox.com/2zi06VlG" target="_blank"><img src="https://images2.imgbox.com/ba/85/2zi06VlG_o.png" alt="image host"/></a>
+<a href="https://imgbox.com/2zi06VlG" target="_blank"><img src="aplikasi_hotel/pp.png" alt="image host"/></a>
 
 ---------------------------------------
 ## Cetak
 
-<a href="https://imgbox.com/YK93uJEj" target="_blank"><img src="aplikasi_hotel/pp.png" alt="image host"/></a>
+<a href="https://imgbox.com/YK93uJEj" target="_blank"><img src="https://images2.imgbox.com/f1/84/YK93uJEj_o.png" alt="image host"/></a>
 
 ---------------------------------------
 
