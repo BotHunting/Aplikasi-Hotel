@@ -32,7 +32,7 @@ Aplikasi Recepcionis via Login
 ---------------------------------------
 ## Cetak
 
-<a href="https://imgbox.com/YK93uJEj" target="_blank"><img src="https://images2.imgbox.com/f1/84/YK93uJEj_o.png" alt="image host"/></a>
+<a href="https://imgbox.com/YK93uJEj" target="_blank"><img src="aplikasi_hotel/pp.png" alt="image host"/></a>
 
 ---------------------------------------
 
